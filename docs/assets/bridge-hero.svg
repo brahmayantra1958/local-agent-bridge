@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330" role="img" aria-labelledby="title desc">
+  <title id="title">local-agent-bridge</title>
+  <desc id="desc">Codex, Claude and Gemini drawn as three small dots joined by thin lines. A task goes from one open chat to another and the result comes back once.</desc>
+  <style>
+    .name { font: 600 24px -apple-system, "Segoe UI", "Malgun Gothic", "Noto Sans KR", sans-serif; fill: #1f2328; }
+    .role { font: 15px -apple-system, "Segoe UI", "Malgun Gothic", "Noto Sans KR", sans-serif; fill: #59636e; }
+    .edge { stroke: #8c959f; stroke-width: 1.4; fill: none; }
+    .note { font: 14px ui-monospace, "Cascadia Code", Consolas, monospace; fill: #8c959f; }
+    .caption { font: 16px -apple-system, "Segoe UI", "Malgun Gothic", "Noto Sans KR", sans-serif; fill: #59636e; }
+    @media (prefers-color-scheme: dark) {
+      .name { fill: #e6edf3; }
+      .role, .caption { fill: #9198a1; }
+      .edge { stroke: #6e7681; }
+      .note { fill: #6e7681; }
+    }
+  </style>
+
+  <path class="edge" d="M 180 175 L 450 110" />
+  <path class="edge" d="M 450 110 L 720 175" />
+  <path class="edge" d="M 180 175 Q 450 300 720 175" />
+
+  <text class="note" x="300" y="128" text-anchor="middle" transform="rotate(-13.5 300 128)">task →</text>
+  <text class="note" x="330" y="166" text-anchor="middle" transform="rotate(-13.5 330 166)">← result</text>
+
+  <circle cx="180" cy="175" r="7" fill="#10A37F" />
+  <circle cx="450" cy="110" r="7" fill="#D97757" />
+  <circle cx="720" cy="175" r="7" fill="#4E86F7" />
+
+  <text class="role" x="180" y="128" text-anchor="middle">logic · 논리·코딩</text>
+  <text class="name" x="180" y="155" text-anchor="middle">Codex</text>
+
+  <text class="role" x="450" y="63" text-anchor="middle">coordination · 조율·디자인</text>
+  <text class="name" x="450" y="90" text-anchor="middle">Claude</text>
+
+  <text class="role" x="720" y="128" text-anchor="middle">writing · 글쓰기</text>
+  <text class="name" x="720" y="155" text-anchor="middle">Gemini</text>
+
+  <text class="caption" x="450" y="290" text-anchor="middle">Your open chats · send once · the result comes back once</text>
+  <text class="caption" x="450" y="314" text-anchor="middle">열어 둔 채팅끼리 · 한 번 보내고 · 결과는 한 번 돌아옵니다</text>
+</svg>

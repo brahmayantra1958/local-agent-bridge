@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "profileId": "agent-bridge-library",
+  "revision": 1,
+  "scope": "library-default",
+  "decisionSource": "User accepted recommended library roles on 2026-10-28; the separate model-division skill remains unchanged.",
+  "sourceSkills": [],
+  "decisionsPending": [],
+  "routes": [
+    {"id":"logic","taskType":"logic","app":"codex","sessionSelector":"registered-project-session","worker":{"modelId":"gpt-6-astra","effort":"xhigh"},"allowedRunners":["session","native-subagent","ccb-worker"],"subagents":{"useWhenIndependent":true,"maxConcurrent":null},"fallback":"no-silent-model-substitution"},
+    {"id":"backend","taskType":"backend","app":"codex","sessionSelector":"registered-project-session","worker":{"modelId":"gpt-6-astra","effort":"xhigh"},"allowedRunners":["session","native-subagent","ccb-worker"],"subagents":{"useWhenIndependent":true,"maxConcurrent":null},"fallback":"no-silent-model-substitution"},
+    {"id":"analysis","taskType":"analysis","app":"codex","sessionSelector":"registered-project-session","worker":{"modelId":"gpt-6-astra","effort":"xhigh"},"allowedRunners":["session","native-subagent","ccb-worker"],"subagents":{"useWhenIndependent":true,"maxConcurrent":null},"fallback":"no-silent-model-substitution"},
+    {"id":"coordination","taskType":"coordination","app":"claude","sessionSelector":"registered-project-session","worker":{"modelId":null,"effort":null},"allowedRunners":["session","native-subagent"],"subagents":{"useWhenIndependent":true,"maxConcurrent":null},"fallback":"no-silent-model-substitution"},
+    {"id":"supervision","taskType":"supervision","app":"claude","sessionSelector":"registered-project-session","worker":{"modelId":null,"effort":null},"allowedRunners":["session","native-subagent"],"subagents":{"useWhenIndependent":true,"maxConcurrent":null},"fallback":"no-silent-model-substitution"},
+    {"id":"writing","taskType":"writing","app":"gemini","sessionSelector":"registered-project-session","worker":{"modelId":null,"effort":null},"allowedRunners":["session","native-subagent"],"subagents":{"useWhenIndependent":true,"maxConcurrent":null},"fallback":"no-silent-model-substitution"},
+    {"id":"revision","taskType":"revision","app":"gemini","sessionSelector":"registered-project-session","worker":{"modelId":null,"effort":null},"allowedRunners":["session","native-subagent"],"subagents":{"useWhenIndependent":true,"maxConcurrent":null},"fallback":"no-silent-model-substitution"}
+  ]
+}

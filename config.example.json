@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "codexCallerThreadId": "<CODEX_THREAD_ID>",
+  "agents": {
+    "codex": {
+      "threadId": "<threadId>",
+      "hostId": "local",
+      "permissionClass": "prompting"
+    },
+    "claude": {
+      "sessionId": "<sessionId>",
+      "hostSessionId": "<hostSessionId>",
+      "permissionClass": "prompting"
+    },
+    "gemini": {
+      "conversationId": "<conversationId>",
+      "projectId": "<projectId>",
+      "permissionClass": "prompting"
+    }
+  }
+}

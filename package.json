@@ -1,0 +1,19 @@
+{
+  "name": "local-agent-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "license": "0BSD",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "bridge": "node bin/agent-bridge.mjs",
+    "verify": "node bin/agent-bridge.mjs verify"
+  },
+  "exports": "./src/index.mjs",
+  "bin": {
+    "agent-bridge": "./bin/agent-bridge.mjs"
+  }
+}
